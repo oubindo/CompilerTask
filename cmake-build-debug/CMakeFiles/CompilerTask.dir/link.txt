@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/CompilerTask.dir/main.cpp.o CMakeFiles/CompilerTask.dir/scanner.cpp.o  -o CompilerTask 

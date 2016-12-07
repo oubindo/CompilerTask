@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/main.cpp
+iostream
+-
+scanner.h
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/scanner.h
+
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/scanner.cpp
+cstring
+-
+malloc.h
+-
+scanner.h
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/scanner.h
+
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/scanner.h
+stdio.h
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/stdio.h
+
