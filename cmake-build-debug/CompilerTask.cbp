@@ -84,7 +84,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/oubin/c/clion-2016.3/Workplace/CompilerTask/analyse.cpp">
+			<Option target="CompilerTask"/>
+		</Unit>
+		<Unit filename="/home/oubin/c/clion-2016.3/Workplace/CompilerTask/analyse.h">
+			<Option target="CompilerTask"/>
+		</Unit>
 		<Unit filename="/home/oubin/c/clion-2016.3/Workplace/CompilerTask/main.cpp">
+			<Option target="CompilerTask"/>
+		</Unit>
+		<Unit filename="/home/oubin/c/clion-2016.3/Workplace/CompilerTask/mean.cpp">
+			<Option target="CompilerTask"/>
+		</Unit>
+		<Unit filename="/home/oubin/c/clion-2016.3/Workplace/CompilerTask/mean.h">
+			<Option target="CompilerTask"/>
+		</Unit>
+		<Unit filename="/home/oubin/c/clion-2016.3/Workplace/CompilerTask/recursive.cpp">
+			<Option target="CompilerTask"/>
+		</Unit>
+		<Unit filename="/home/oubin/c/clion-2016.3/Workplace/CompilerTask/recursive.h">
 			<Option target="CompilerTask"/>
 		</Unit>
 		<Unit filename="/home/oubin/c/clion-2016.3/Workplace/CompilerTask/scanner.cpp">

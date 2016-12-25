@@ -18,13 +18,23 @@ typedef struct{
 extern char const *keywords[];
 extern char program[];
 extern char reprogram[];
+extern char exprogram[];
 extern char token[];
 extern char ch;
 extern int key;
 extern bool isUseful;
 extern int aIndex;
 
+
+double c2d(char *s);
+
+double dealNorm(char *s,int i);
+
 void init();
+
+void initExp();
+
+void initSpace();
 
 char getch(char *str);
 

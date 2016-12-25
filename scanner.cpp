@@ -8,31 +8,125 @@
 char const *keywords[]={"main","int","float","double","char","if","else","do","while"};
 char program[PROGRAME_SIZE];
 char reprogram[PROGRAME_SIZE];
+char exprogram[PROGRAME_SIZE];
 char token[TOKEN_SIZE];
 char ch;
 bool isUseful=true;
 int key=0;
 int aIndex=0;
 
-void init(){
+void initExp(){
     int j=0;
     for(int i=0;i<PROGRAME_SIZE;i++){
         char c=reprogram[i];
-        /*if(i>0){
-            char c0=reprogram[i-1];
-        }*/
         if(c=='/' && reprogram[i+1]=='*'){
             isUseful=false;
         }
         if(isUseful){
-            if(c != ' ' && c!= '\r' && c !='\n'&& c!='\t'){
-                program[j++]=c;
+            if(c!= '\r' && c !='\n'&& c!='\t'){
+                exprogram[j++]=c;
             }
         }
         if(i>=1 && reprogram[i-1]=='*' && c=='/') isUseful=true;
     }
-
 }
+
+
+void initSpace(){
+    int j=0;
+    for(int i=0;i<PROGRAME_SIZE && exprogram[i] != '\0';){
+        char c=exprogram[i];
+        while(c==' ' && exprogram[i+1]==' '){
+            i++;
+        }
+        program[j++]=exprogram[i++];
+    }
+    program[j]='$';
+}
+
+void init(){
+    initExp();
+    initSpace();
+}
+
+double c2d(char *s){
+    double d1=0,d2=0;
+    int t=0;
+    int i=0;
+    bool operation=true;
+    bool isNag=false;
+
+    if(s[i]=='+'){
+        isNag=false;
+        i++;
+    }else if(s[i]=='-'){
+        isNag=true;
+        i++;
+    }else if(isDigit(s[i])){
+        isNag=false;
+    }
+
+    while(s[i]!='\0' && s[i]!='e'){
+        if(s[i]=='.'){
+            t=10;
+        }else{
+            if(t==0){
+                d1=d1*10 + (s[i]-'0');
+            }else{
+                d1 = d1 + (double)(s[i]-'0')/t;
+                t *=10;
+            }
+
+        }
+        i++;
+    }
+
+    if(s[i]=='e'){
+        if(s[i+1]=='+' || isDigit(s[i+1])) {
+            operation=true;
+            if(s[i+1]=='+'){
+                d2=dealNorm(s,i+2);
+            }else{
+                d2=dealNorm(s,i+1);
+            }
+        }
+        else if(s[i+1]=='-'){
+            operation=false;
+            if(s[i+1]=='-'){
+                d2=dealNorm(s,i+2);
+            }else{
+                d2=dealNorm(s,i+1);
+            }
+        }
+    }
+
+    if(operation){
+        while(d2>=1){
+            d1=d1*10;
+            d2--;
+        }
+    }else{
+        while(d2<=-1){
+            d1=d1/10;
+            d2++;
+        }
+    }
+
+    if(isNag){
+        d1=0-d1;
+    }
+    return d1;
+}
+
+double dealNorm(char *s,int i){
+    int d1=0;
+    while(s[i]!='\0'){
+        d1=d1*10 + (s[i]-'0');
+        i++;
+    }
+    return d1;
+}
+
 
 char getch(char *str){
     ch=*(str+key);
@@ -113,7 +207,7 @@ Pt_Word testDigit(char *str){
         if(!isDigit(ch)){
             error();
             retract();
-            return NULL;
+            return resultWord(-1,"error");
         }
         while(isDigit(ch)){
             concat();
@@ -176,7 +270,7 @@ Pt_Word testDigit(char *str){
     }
     error();
     retract();
-    return NULL;
+    return resultWord(-1,"error");
 }
 
 
@@ -250,6 +344,7 @@ Pt_Word scanner(char *str){
             case ',': return resultWord(30, ",");
             case ';': return resultWord(31, ";");
             case '#': return resultWord(0, "#");
+            case '$': return resultWord(100,"$");
             case '=':
                 getch(str);
                 if(ch == '=') return resultWord(36, "==");
@@ -284,7 +379,7 @@ Pt_Word scanner(char *str){
                 break;
         }
     error();
-    return NULL;
+    return resultWord(-1,"error");
 }
 
 

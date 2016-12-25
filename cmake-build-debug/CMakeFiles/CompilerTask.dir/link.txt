@@ -1,1 +1,1 @@
-/usr/bin/c++   -g   CMakeFiles/CompilerTask.dir/main.cpp.o CMakeFiles/CompilerTask.dir/scanner.cpp.o  -o CompilerTask 
+/usr/bin/c++   -g   CMakeFiles/CompilerTask.dir/main.cpp.o CMakeFiles/CompilerTask.dir/scanner.cpp.o CMakeFiles/CompilerTask.dir/analyse.cpp.o CMakeFiles/CompilerTask.dir/mean.cpp.o CMakeFiles/CompilerTask.dir/recursive.cpp.o  -o CompilerTask 

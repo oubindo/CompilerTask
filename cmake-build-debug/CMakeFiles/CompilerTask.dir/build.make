@@ -105,19 +105,97 @@ CMakeFiles/CompilerTask.dir/scanner.cpp.o.provides: CMakeFiles/CompilerTask.dir/
 CMakeFiles/CompilerTask.dir/scanner.cpp.o.provides.build: CMakeFiles/CompilerTask.dir/scanner.cpp.o
 
 
+CMakeFiles/CompilerTask.dir/analyse.cpp.o: CMakeFiles/CompilerTask.dir/flags.make
+CMakeFiles/CompilerTask.dir/analyse.cpp.o: ../analyse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oubin/c/clion-2016.3/Workplace/CompilerTask/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CompilerTask.dir/analyse.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CompilerTask.dir/analyse.cpp.o -c /home/oubin/c/clion-2016.3/Workplace/CompilerTask/analyse.cpp
+
+CMakeFiles/CompilerTask.dir/analyse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilerTask.dir/analyse.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oubin/c/clion-2016.3/Workplace/CompilerTask/analyse.cpp > CMakeFiles/CompilerTask.dir/analyse.cpp.i
+
+CMakeFiles/CompilerTask.dir/analyse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilerTask.dir/analyse.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oubin/c/clion-2016.3/Workplace/CompilerTask/analyse.cpp -o CMakeFiles/CompilerTask.dir/analyse.cpp.s
+
+CMakeFiles/CompilerTask.dir/analyse.cpp.o.requires:
+
+.PHONY : CMakeFiles/CompilerTask.dir/analyse.cpp.o.requires
+
+CMakeFiles/CompilerTask.dir/analyse.cpp.o.provides: CMakeFiles/CompilerTask.dir/analyse.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/analyse.cpp.o.provides.build
+.PHONY : CMakeFiles/CompilerTask.dir/analyse.cpp.o.provides
+
+CMakeFiles/CompilerTask.dir/analyse.cpp.o.provides.build: CMakeFiles/CompilerTask.dir/analyse.cpp.o
+
+
+CMakeFiles/CompilerTask.dir/mean.cpp.o: CMakeFiles/CompilerTask.dir/flags.make
+CMakeFiles/CompilerTask.dir/mean.cpp.o: ../mean.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oubin/c/clion-2016.3/Workplace/CompilerTask/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CompilerTask.dir/mean.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CompilerTask.dir/mean.cpp.o -c /home/oubin/c/clion-2016.3/Workplace/CompilerTask/mean.cpp
+
+CMakeFiles/CompilerTask.dir/mean.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilerTask.dir/mean.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oubin/c/clion-2016.3/Workplace/CompilerTask/mean.cpp > CMakeFiles/CompilerTask.dir/mean.cpp.i
+
+CMakeFiles/CompilerTask.dir/mean.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilerTask.dir/mean.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oubin/c/clion-2016.3/Workplace/CompilerTask/mean.cpp -o CMakeFiles/CompilerTask.dir/mean.cpp.s
+
+CMakeFiles/CompilerTask.dir/mean.cpp.o.requires:
+
+.PHONY : CMakeFiles/CompilerTask.dir/mean.cpp.o.requires
+
+CMakeFiles/CompilerTask.dir/mean.cpp.o.provides: CMakeFiles/CompilerTask.dir/mean.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/mean.cpp.o.provides.build
+.PHONY : CMakeFiles/CompilerTask.dir/mean.cpp.o.provides
+
+CMakeFiles/CompilerTask.dir/mean.cpp.o.provides.build: CMakeFiles/CompilerTask.dir/mean.cpp.o
+
+
+CMakeFiles/CompilerTask.dir/recursive.cpp.o: CMakeFiles/CompilerTask.dir/flags.make
+CMakeFiles/CompilerTask.dir/recursive.cpp.o: ../recursive.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oubin/c/clion-2016.3/Workplace/CompilerTask/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CompilerTask.dir/recursive.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CompilerTask.dir/recursive.cpp.o -c /home/oubin/c/clion-2016.3/Workplace/CompilerTask/recursive.cpp
+
+CMakeFiles/CompilerTask.dir/recursive.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilerTask.dir/recursive.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oubin/c/clion-2016.3/Workplace/CompilerTask/recursive.cpp > CMakeFiles/CompilerTask.dir/recursive.cpp.i
+
+CMakeFiles/CompilerTask.dir/recursive.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilerTask.dir/recursive.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oubin/c/clion-2016.3/Workplace/CompilerTask/recursive.cpp -o CMakeFiles/CompilerTask.dir/recursive.cpp.s
+
+CMakeFiles/CompilerTask.dir/recursive.cpp.o.requires:
+
+.PHONY : CMakeFiles/CompilerTask.dir/recursive.cpp.o.requires
+
+CMakeFiles/CompilerTask.dir/recursive.cpp.o.provides: CMakeFiles/CompilerTask.dir/recursive.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/recursive.cpp.o.provides.build
+.PHONY : CMakeFiles/CompilerTask.dir/recursive.cpp.o.provides
+
+CMakeFiles/CompilerTask.dir/recursive.cpp.o.provides.build: CMakeFiles/CompilerTask.dir/recursive.cpp.o
+
+
 # Object files for target CompilerTask
 CompilerTask_OBJECTS = \
 "CMakeFiles/CompilerTask.dir/main.cpp.o" \
-"CMakeFiles/CompilerTask.dir/scanner.cpp.o"
+"CMakeFiles/CompilerTask.dir/scanner.cpp.o" \
+"CMakeFiles/CompilerTask.dir/analyse.cpp.o" \
+"CMakeFiles/CompilerTask.dir/mean.cpp.o" \
+"CMakeFiles/CompilerTask.dir/recursive.cpp.o"
 
 # External object files for target CompilerTask
 CompilerTask_EXTERNAL_OBJECTS =
 
 CompilerTask: CMakeFiles/CompilerTask.dir/main.cpp.o
 CompilerTask: CMakeFiles/CompilerTask.dir/scanner.cpp.o
+CompilerTask: CMakeFiles/CompilerTask.dir/analyse.cpp.o
+CompilerTask: CMakeFiles/CompilerTask.dir/mean.cpp.o
+CompilerTask: CMakeFiles/CompilerTask.dir/recursive.cpp.o
 CompilerTask: CMakeFiles/CompilerTask.dir/build.make
 CompilerTask: CMakeFiles/CompilerTask.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oubin/c/clion-2016.3/Workplace/CompilerTask/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CompilerTask"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oubin/c/clion-2016.3/Workplace/CompilerTask/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable CompilerTask"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CompilerTask.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +205,9 @@ CMakeFiles/CompilerTask.dir/build: CompilerTask
 
 CMakeFiles/CompilerTask.dir/requires: CMakeFiles/CompilerTask.dir/main.cpp.o.requires
 CMakeFiles/CompilerTask.dir/requires: CMakeFiles/CompilerTask.dir/scanner.cpp.o.requires
+CMakeFiles/CompilerTask.dir/requires: CMakeFiles/CompilerTask.dir/analyse.cpp.o.requires
+CMakeFiles/CompilerTask.dir/requires: CMakeFiles/CompilerTask.dir/mean.cpp.o.requires
+CMakeFiles/CompilerTask.dir/requires: CMakeFiles/CompilerTask.dir/recursive.cpp.o.requires
 
 .PHONY : CMakeFiles/CompilerTask.dir/requires
 

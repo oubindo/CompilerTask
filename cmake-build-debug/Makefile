@@ -123,6 +123,33 @@ CompilerTask/fast:
 	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/build
 .PHONY : CompilerTask/fast
 
+analyse.o: analyse.cpp.o
+
+.PHONY : analyse.o
+
+# target to build an object file
+analyse.cpp.o:
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/analyse.cpp.o
+.PHONY : analyse.cpp.o
+
+analyse.i: analyse.cpp.i
+
+.PHONY : analyse.i
+
+# target to preprocess a source file
+analyse.cpp.i:
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/analyse.cpp.i
+.PHONY : analyse.cpp.i
+
+analyse.s: analyse.cpp.s
+
+.PHONY : analyse.s
+
+# target to generate assembly for a file
+analyse.cpp.s:
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/analyse.cpp.s
+.PHONY : analyse.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -149,6 +176,60 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+mean.o: mean.cpp.o
+
+.PHONY : mean.o
+
+# target to build an object file
+mean.cpp.o:
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/mean.cpp.o
+.PHONY : mean.cpp.o
+
+mean.i: mean.cpp.i
+
+.PHONY : mean.i
+
+# target to preprocess a source file
+mean.cpp.i:
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/mean.cpp.i
+.PHONY : mean.cpp.i
+
+mean.s: mean.cpp.s
+
+.PHONY : mean.s
+
+# target to generate assembly for a file
+mean.cpp.s:
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/mean.cpp.s
+.PHONY : mean.cpp.s
+
+recursive.o: recursive.cpp.o
+
+.PHONY : recursive.o
+
+# target to build an object file
+recursive.cpp.o:
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/recursive.cpp.o
+.PHONY : recursive.cpp.o
+
+recursive.i: recursive.cpp.i
+
+.PHONY : recursive.i
+
+# target to preprocess a source file
+recursive.cpp.i:
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/recursive.cpp.i
+.PHONY : recursive.cpp.i
+
+recursive.s: recursive.cpp.s
+
+.PHONY : recursive.s
+
+# target to generate assembly for a file
+recursive.cpp.s:
+	$(MAKE) -f CMakeFiles/CompilerTask.dir/build.make CMakeFiles/CompilerTask.dir/recursive.cpp.s
+.PHONY : recursive.cpp.s
 
 scanner.o: scanner.cpp.o
 
@@ -186,9 +267,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CompilerTask"
+	@echo "... analyse.o"
+	@echo "... analyse.i"
+	@echo "... analyse.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mean.o"
+	@echo "... mean.i"
+	@echo "... mean.s"
+	@echo "... recursive.o"
+	@echo "... recursive.i"
+	@echo "... recursive.s"
 	@echo "... scanner.o"
 	@echo "... scanner.i"
 	@echo "... scanner.s"
