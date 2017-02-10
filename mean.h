@@ -4,24 +4,37 @@
 
 #ifndef COMPILERTASK_MEAN_H
 #define COMPILERTASK_MEAN_H
-#define QUAD_SIZE 40
-
-extern int next;
-extern Quad quad[];
+#define QUAD_SIZE 50
+#define SYN_SIZE 50
 
 typedef struct Quad{
-    char result[8];
-    char ag1[8];
-    char op[8];
-    char ag2[8];
+    char *result;
+    char *ag1;
+    char *op;
+    char *ag2;
 } *Pt_Quad;
 
+typedef struct Syntax{
+    int code;
+    int tr;
+    int fa;
+    int chain;
+} *Pt_Syntax;
+
+extern Pt_Quad quad[];
+extern Pt_Syntax syntax[];
+extern int synIndex;
+extern int next;
+
+extern int k;
 
 void emit(char *result,char *ag1,char *op,char *ag2);
 
+void emitIf(char *result,char *arg1, char *op,char *arg2,char *go,int dsc);
+
+void printfQuad();
 char* newtemp();
 
-
-
+void backpatch(int cfalse,int kend);
 
 #endif //COMPILERTASK_MEAN_H

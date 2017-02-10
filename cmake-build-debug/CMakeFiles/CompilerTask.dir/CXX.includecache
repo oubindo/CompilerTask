@@ -19,22 +19,38 @@ iostream
 -
 scanner.h
 /home/oubin/c/clion-2016.3/Workplace/CompilerTask/scanner.h
-analyse.h
-/home/oubin/c/clion-2016.3/Workplace/CompilerTask/analyse.h
 recursive.h
 /home/oubin/c/clion-2016.3/Workplace/CompilerTask/recursive.h
+mean.h
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/mean.h
 
 /home/oubin/c/clion-2016.3/Workplace/CompilerTask/mean.cpp
+malloc.h
+-
+cstring
+-
+mean.h
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/mean.h
+
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/mean.h
 
 /home/oubin/c/clion-2016.3/Workplace/CompilerTask/recursive.cpp
+malloc.h
+-
+cstring
+-
 recursive.h
 /home/oubin/c/clion-2016.3/Workplace/CompilerTask/recursive.h
 scanner.h
 /home/oubin/c/clion-2016.3/Workplace/CompilerTask/scanner.h
+mean.h
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/mean.h
 
 /home/oubin/c/clion-2016.3/Workplace/CompilerTask/recursive.h
 stdio.h
 -
+scanner.h
+/home/oubin/c/clion-2016.3/Workplace/CompilerTask/scanner.h
 
 /home/oubin/c/clion-2016.3/Workplace/CompilerTask/scanner.cpp
 cstring

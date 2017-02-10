@@ -6,6 +6,7 @@
 #ifndef COMPILERTASK_RECURSIVE_H
 #define COMPILERTASK_RECURSIVE_H
 #include <stdio.h>
+#include "scanner.h"
 
 extern int sym;
 
@@ -15,7 +16,7 @@ void reerror();
 // 程序
 void P();
 // 语句块
-void K();
+int K();
 // 语句串
 void CN();
 // 语句
@@ -27,15 +28,16 @@ void CS();
 // 循环语句
 void LS();
 // 表达式
-void SA();
+char* SA();
 // 条件
-void C();
+int C();
 // 关系运算符
-void O();
+char* O();
 // 项
-void A();
+char* A();
 // 因子
-void B();
+char* B();
 
 void  recursive();
+
 #endif //COMPILERTASK_RECURSIVE_H

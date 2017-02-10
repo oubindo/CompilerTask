@@ -1,6 +1,16 @@
 #include <iostream>
 #include "scanner.h"
 #include "recursive.h"
+#include "mean.h"
+
+/*char* get(){
+    char nu[]="I am oubindo";
+    char* c=(char *)malloc(sizeof(char)*20);
+    c=nu;
+    return c;
+}*/
+
+
 
 int main() {
     char c;
@@ -25,7 +35,6 @@ int main() {
             else printf("( %d , %s )\n",pt_word->wordType,pt_word->word);
         }
     }*/
-
 
     return 0;
 }

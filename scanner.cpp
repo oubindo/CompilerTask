@@ -173,6 +173,7 @@ void retract(){
     }
 }
 
+// 这里的c是放在常量区的，pt_word是堆区的，在函数调用完后不会被舍掉。
 Pt_Word resultWord(int type, char *c){
     Pt_Word pt_word=(Pt_Word)malloc(sizeof(Word));
     pt_word->word=c;

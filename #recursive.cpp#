@@ -35,7 +35,7 @@ void P() {
         if (sym == 26) {
             scaner();
             if (sym == 27) {
-                scaner();
+	      scaner();
                 K();
             } else reerror();
         } else reerror();
@@ -184,7 +184,7 @@ int C() {
     emitIf("if",arg1,op,arg2,"goto",0);
     emitIf("","","","","goto",0);
     //printf("if %s %s %s, goto %d\n",arg1,op,arg2,next+2);
-    //printf("goto 0");
+    //printf("goto %d")
     return next-1;
 }
 

@@ -5,13 +5,15 @@ CMakeFiles/CompilerTask.dir/analyse.cpp.o: ../analyse.cpp
 CMakeFiles/CompilerTask.dir/analyse.cpp.o: ../analyse.h
 CMakeFiles/CompilerTask.dir/analyse.cpp.o: ../scanner.h
 
-CMakeFiles/CompilerTask.dir/main.cpp.o: ../analyse.h
 CMakeFiles/CompilerTask.dir/main.cpp.o: ../main.cpp
+CMakeFiles/CompilerTask.dir/main.cpp.o: ../mean.h
 CMakeFiles/CompilerTask.dir/main.cpp.o: ../recursive.h
 CMakeFiles/CompilerTask.dir/main.cpp.o: ../scanner.h
 
 CMakeFiles/CompilerTask.dir/mean.cpp.o: ../mean.cpp
+CMakeFiles/CompilerTask.dir/mean.cpp.o: ../mean.h
 
+CMakeFiles/CompilerTask.dir/recursive.cpp.o: ../mean.h
 CMakeFiles/CompilerTask.dir/recursive.cpp.o: ../recursive.cpp
 CMakeFiles/CompilerTask.dir/recursive.cpp.o: ../recursive.h
 CMakeFiles/CompilerTask.dir/recursive.cpp.o: ../scanner.h
